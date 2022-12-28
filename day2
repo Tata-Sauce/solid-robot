@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+
+{
+	int n = 0;
+	int y = 0;
+	int m = 0;
+	scanf_s("%d.%d.%d", &n, &m,&y);
+
+	if (n <= m)
+	{
+		if (m <= y)
+			printf("%d", y);
+		else
+			printf("%d", m);
+	}
+	else
+	{
+		if (n <= y)
+			printf("%d", y);
+		else
+			printf("%d", n);
+	} 
+	return 0;
+}
